@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LifeCounterActivity"
+    style="@style/AppTheme">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/background1"
+            android:layout_weight="0.50"
+            android:layout_gravity="top"
+            android:rotation="180"
+            android:src="@drawable/forest"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/background2"
+            android:layout_weight="0.50"
+            android:layout_gravity="bottom"
+            android:src="@drawable/mountain"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <org.nuxgu.magiclifecounter.CustomNumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lifeCounter1"
+            android:rotation="180"
+            android:layout_weight=".40"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="120dp" />
+
+        <Space
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_weight="0.2" />
+
+        <org.nuxgu.magiclifecounter.CustomNumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lifeCounter2"
+            android:layout_weight=".40"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="120dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:rotation="180"
+            android:id="@+id/manaButtons1">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/whiteButton1"
+                android:src="@drawable/white_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitStart"
+                android:layout_gravity="left" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/blueButton1"
+                android:src="@drawable/blue_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitStart"
+                android:layout_gravity="left" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/blackButton1"
+                android:src="@drawable/black_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitStart"
+                android:layout_gravity="left" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/redButton1"
+                android:src="@drawable/red_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitStart"
+                android:layout_gravity="left" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/greenButton1"
+                android:src="@drawable/green_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitStart"
+                android:layout_gravity="left" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:id="@+id/manaButtons2">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/whiteButton2"
+                android:layout_gravity="right"
+                android:src="@drawable/white_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitEnd" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/blueButton2"
+                android:layout_gravity="right"
+                android:src="@drawable/blue_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitEnd" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/blackButton2"
+                android:layout_gravity="right"
+                android:src="@drawable/black_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitEnd" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/redButton2"
+                android:layout_gravity="right"
+                android:src="@drawable/red_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitEnd" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/greenButton2"
+                android:layout_gravity="right"
+                android:src="@drawable/green_mana"
+                android:background="#00ffffff"
+                android:layout_margin="5dp"
+                android:layout_weight="0.15"
+                android:scaleType="fitEnd" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:id="@+id/resetButton"
+        android:layout_centerVertical="true"
+        android:rotation="270"
+        android:layout_alignParentStart="true"
+        android:alpha="0.5" />
+
+</RelativeLayout>
